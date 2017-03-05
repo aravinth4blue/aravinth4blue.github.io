@@ -1,2 +1,2 @@
-var app=angular.module("resume","");
+var app=angular.module("resume",[]);
 console.log(app);
