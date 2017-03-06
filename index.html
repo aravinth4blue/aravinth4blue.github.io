@@ -21,7 +21,7 @@
 <article ng-controller="Customers as vm">
     <h2> in </h2>
     <ul ng-repeat="c in vm.customers">
-      <li></li>
+      <li ng-repeat="c in vm.customers">{{c.name}}</li>
     </ul>
   </article>
 </div>
