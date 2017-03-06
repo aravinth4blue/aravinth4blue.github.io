@@ -14,14 +14,16 @@
 }
 </style>
 </head>
-<body ng-controller="Customers as vm">
+<body >
 <header>
 </header>
 <div class="center-content">
-<ul ng-repeat="c in vm.customers">
-<li></li>
-</ul>
-Aravinth
+<article ng-controller="Customers as vm">
+    <h2> in </h2>
+    <ul ng-repeat="c in vm.customers">
+      <li></li>
+    </ul>
+  </article>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
 <script src="js/custom.js"></script>
