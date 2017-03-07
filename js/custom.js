@@ -1,9 +1,10 @@
-var app=angular.module("resume",['ui.router']).controller('Customers',[function(){
+var app=angular.module("resume",['ui.router']);
+app.controller('Customers',[function(){
 var vm=this;
 vm.title='Customers';
 vm.customers=[{name:'Aravinth'},{name:'London'}];
 }]);
-app.config(function($stateprovider){
+app.config(function($stateProvider){
 var homestate={
 	name:'Home',
 	url:'/home',
@@ -14,6 +15,6 @@ var aboutstate={
 	url:'/about',
 	template:'<h3>About page</h3>'
 }
-$stateprovider.state(homestate);
-$stateprovider.state(aboutstate);
+$stateProvider.state(homestate);
+$stateProvider.state(aboutstate);
 });
