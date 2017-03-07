@@ -6,7 +6,7 @@ vm.customers=[{name:'Aravinth'},{name:'London'}];
 }]);
 app.config(function($stateProvider){
 var homestate={
-	name:'Home',
+	name:'home',
 	url:'/home',
 	template: '<h3>Homepage</h3>'
 }
