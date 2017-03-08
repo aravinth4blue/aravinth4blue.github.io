@@ -1,8 +1,7 @@
 (function () {
     'use strict';
 
-    angular
-        .module('app')
+    angular.module('app')
         .controller('IndexController', Controller);
 
     function Controller($location, AuthenticationService) {

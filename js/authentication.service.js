@@ -1,8 +1,7 @@
     (function () {
     'use strict';
 
-    angular
-        .module('app')
+    angular.module('app')
         .factory('AuthenticationService', Service);
 
     function Service($http, $localStorage) {
