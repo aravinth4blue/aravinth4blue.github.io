@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-    .module("app",['ui.router','ngMessages', 'ngStorage', 'ngMockE2E']);
+    .module("app",['ui.router','ngMessages', 'ngStorage', 'ngMockE2E'])
     .config(config)
     .run(run);
     function config($stateProvider, $urlRouterProvider) {
