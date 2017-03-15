@@ -18,7 +18,10 @@
 
         function login() {
             vm.loading = true;
-            AuthenticationService.Login(vm.username, vm.password, function (result) {
+            //console.log(vm.loading);
+            //console.log(response);
+            AuthenticationService.Login(vm.username, function (result) {
+                console.log(result);
                 if (result === true) {
                     $location.path('/');
                 } else {
